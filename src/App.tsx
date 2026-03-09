@@ -1,5 +1,6 @@
 import React from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 import LandingPage from './pages/LandingPage';
 import BlogPost from './pages/BlogPost';
 
@@ -62,6 +63,7 @@ export default function App() {
         <Route path="/blog" element={<BlogPost />} />
       </Routes>
       <Footer />
+      <Analytics />
     </div>
   );
 }
