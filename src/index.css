@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+
+  --color-parchment: #F9F6F0;
+  --color-ivory: #FDFCF9;
+  --color-navy: #1A2B4C;
+  --color-navy-light: #2A3F66;
+  --color-burgundy: #6B2D3A;
+  --color-brass: #C5A059;
+  --color-brass-light: #D4B57A;
+  --color-postal-red: #D34B4B;
+  --color-ink: #4A5568;
+  --color-ink-light: #718096;
+  --color-paper-border: #E2DCD0;
+}
+
+body {
+  background-color: var(--color-parchment);
+  color: var(--color-navy);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Subtle paper texture overlay */
+.paper-texture {
+  position: relative;
+}
+.paper-texture::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.4;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  mix-blend-mode: multiply;
+  z-index: 10;
+}
+
+/* Postal stamp border effect */
+.stamp-border {
+  padding: 4px;
+  background: white;
+  border: 1px solid var(--color-paper-border);
+  position: relative;
+}
+.stamp-border::after {
+  content: '';
+  position: absolute;
+  top: -4px; left: -4px; right: -4px; bottom: -4px;
+  border: 1px dashed var(--color-brass);
+  pointer-events: none;
+  opacity: 0.3;
+}
