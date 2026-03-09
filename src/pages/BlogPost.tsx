@@ -41,9 +41,14 @@ export default function BlogPost() {
               <button className="w-10 h-10 rounded-full bg-white border border-paper-border flex items-center justify-center text-ink hover:text-navy hover:bg-ivory transition-colors">
                 <Twitter className="w-4 h-4" />
               </button>
-              <button className="w-10 h-10 rounded-full bg-white border border-paper-border flex items-center justify-center text-ink hover:text-navy hover:bg-ivory transition-colors">
+              <a 
+                href="https://www.linkedin.com/in/md-twashin-ilahi-b9baa4261/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-white border border-paper-border flex items-center justify-center text-ink hover:text-navy hover:bg-ivory transition-colors"
+              >
                 <Linkedin className="w-4 h-4" />
-              </button>
+              </a>
               <button className="w-10 h-10 rounded-full bg-white border border-paper-border flex items-center justify-center text-ink hover:text-navy hover:bg-ivory transition-colors">
                 <Share2 className="w-4 h-4" />
               </button>
