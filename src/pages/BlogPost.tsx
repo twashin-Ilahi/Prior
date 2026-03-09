@@ -28,9 +28,12 @@ export default function BlogPost() {
           
           <div className="flex items-center justify-between py-6 border-y border-paper-border">
             <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-full bg-ivory border border-paper-border flex items-center justify-center font-serif text-navy italic text-xl">
-                T
-              </div>
+              <img 
+                src="/twashin.png" 
+                alt="Twashin Ilahi" 
+                className="w-12 h-12 rounded-full object-cover border border-paper-border shadow-sm"
+                referrerPolicy="no-referrer"
+              />
               <div>
                 <div className="font-medium text-navy">Twashin Ilahi</div>
                 <div className="text-sm text-ink-light">Founder & CEO, Prior</div>
