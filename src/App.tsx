@@ -3,6 +3,7 @@ import { Routes, Route, Link } from 'react-router-dom';
 import { Analytics } from '@vercel/analytics/react';
 import LandingPage from './pages/LandingPage';
 import BlogPost from './pages/BlogPost';
+import PriorAIChat from './components/PriorAIChat';
 
 const Nav = () => (
   <nav className="w-full max-w-7xl mx-auto px-6 py-8 flex justify-between items-center relative z-10">
@@ -22,7 +23,7 @@ const Nav = () => (
         Sign In
       </a>
       <a href="https://priormailid.vercel.app/" className="inline-block bg-navy text-parchment px-5 py-2.5 text-sm font-medium rounded-sm hover:bg-navy-light transition-colors shadow-sm">
-        Request Access
+        Access Now
       </a>
     </div>
   </nav>
@@ -63,6 +64,7 @@ export default function App() {
         <Route path="/blog" element={<BlogPost />} />
       </Routes>
       <Footer />
+      <PriorAIChat />
       <Analytics />
     </div>
   );

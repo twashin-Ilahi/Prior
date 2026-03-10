@@ -171,7 +171,7 @@ export default function BlogPost() {
           <h3 className="font-serif text-2xl text-navy mb-4">Ready to reclaim your inbox?</h3>
           <p className="text-ink mb-8">Join the waitlist to secure early access to Prior.</p>
           <a href="https://priormailid.vercel.app/" className="inline-block bg-navy text-parchment px-8 py-4 text-base font-medium rounded-sm hover:bg-navy-light transition-colors shadow-md">
-            Request Access
+            Access Now
           </a>
         </div>
 

@@ -56,3 +56,32 @@ body {
   pointer-events: none;
   opacity: 0.3;
 }
+
+/* Markdown Styles for Chat */
+.markdown-body p {
+  margin-bottom: 0.5em;
+}
+.markdown-body p:last-child {
+  margin-bottom: 0;
+}
+.markdown-body strong {
+  font-weight: 600;
+  color: var(--color-navy);
+}
+.markdown-body ul {
+  list-style-type: disc;
+  padding-left: 1.25em;
+  margin-bottom: 0.5em;
+}
+.markdown-body ol {
+  list-style-type: decimal;
+  padding-left: 1.25em;
+  margin-bottom: 0.5em;
+}
+.markdown-body li {
+  margin-bottom: 0.25em;
+}
+.markdown-body a {
+  color: var(--color-brass);
+  text-decoration: underline;
+}

@@ -37,7 +37,7 @@ const Hero = () => (
       </p>
       <div className="flex flex-col sm:flex-row gap-4">
         <a href="https://priormailid.vercel.app/" className="bg-navy text-parchment px-8 py-4 text-base font-medium rounded-sm hover:bg-navy-light transition-colors shadow-md flex items-center justify-center gap-2">
-          Request Access <ArrowRight className="w-4 h-4" />
+          Access Now <ArrowRight className="w-4 h-4" />
         </a>
         <button className="bg-transparent border border-paper-border text-navy px-8 py-4 text-base font-medium rounded-sm hover:bg-white/50 transition-colors flex items-center justify-center gap-2">
           See How It Works
@@ -633,7 +633,7 @@ const CTA = () => (
       
       <div className="flex flex-col sm:flex-row justify-center gap-4">
         <a href="https://priormailid.vercel.app/" className="inline-block bg-navy text-parchment px-8 py-4 text-base font-medium rounded-sm hover:bg-navy-light transition-colors shadow-md">
-          Request Access
+          Access Now
         </a>
         <button className="bg-transparent border border-paper-border text-navy px-8 py-4 text-base font-medium rounded-sm hover:bg-white/50 transition-colors">
           Book a Demo
