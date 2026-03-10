@@ -29,7 +29,7 @@ export default function BlogPost() {
           <div className="flex items-center justify-between py-6 border-y border-paper-border">
             <div className="flex items-center gap-4">
               <img 
-                src="/twashin.png" 
+                src="/twashin.jpg" 
                 alt="Twashin Ilahi" 
                 className="w-12 h-12 rounded-full object-cover border border-paper-border shadow-sm"
                 referrerPolicy="no-referrer"
