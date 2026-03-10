@@ -435,8 +435,11 @@ const Serendipity = () => (
       <Mail className="w-6 h-6 text-brass" />
     </div>
     <h2 className="font-serif text-4xl md:text-5xl text-navy mb-8">Protection without isolation.</h2>
-    <p className="text-xl md:text-2xl text-ink leading-relaxed font-light mb-12">
+    <p className="text-xl md:text-2xl text-ink leading-relaxed font-light mb-8">
       Prior does not build a wall around you. It builds a highly intelligent gate. It helps meaningful outreach get through — even in a world flooded with synthetic noise.
+    </p>
+    <p className="font-serif italic text-2xl md:text-3xl text-navy mb-12">
+      No more gatekeeping your contact info!
     </p>
     <div className="w-24 h-px bg-paper-border mx-auto"></div>
   </section>
