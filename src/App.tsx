@@ -18,12 +18,12 @@ const Nav = () => (
       <Link to="/blog" className="hover:text-navy transition-colors">Manifesto</Link>
     </div>
     <div className="flex items-center gap-4">
-      <button className="hidden md:block text-sm font-medium text-navy hover:text-navy-light transition-colors">
+      <a href="https://priormailid.vercel.app/" className="hidden md:block text-sm font-medium text-navy hover:text-navy-light transition-colors">
         Sign In
-      </button>
-      <button className="bg-navy text-parchment px-5 py-2.5 text-sm font-medium rounded-sm hover:bg-navy-light transition-colors shadow-sm">
+      </a>
+      <a href="https://priormailid.vercel.app/" className="inline-block bg-navy text-parchment px-5 py-2.5 text-sm font-medium rounded-sm hover:bg-navy-light transition-colors shadow-sm">
         Request Access
-      </button>
+      </a>
     </div>
   </nav>
 );
