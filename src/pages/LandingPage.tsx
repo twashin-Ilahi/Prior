@@ -163,6 +163,41 @@ const TrustStrip = () => (
   </div>
 );
 
+const VideoDemo = () => (
+  <section className="w-full bg-ivory py-16 md:py-24 border-b border-paper-border relative overflow-hidden">
+    <div className="absolute top-0 left-0 w-full h-full paper-texture opacity-50"></div>
+    <div className="max-w-5xl mx-auto px-6 relative z-10">
+      <div className="text-center mb-12">
+        <div className="inline-flex items-center gap-2 px-3 py-1 border border-brass/30 bg-brass/10 rounded-full mb-6">
+          <span className="text-xs font-semibold tracking-widest uppercase text-brass">Product Demo</span>
+        </div>
+        <h2 className="font-serif text-3xl md:text-4xl text-navy mb-4">See Prior in Action</h2>
+        <p className="text-ink text-lg max-w-2xl mx-auto font-light">Watch how the AI chief-of-staff protects your attention and surfaces what matters.</p>
+      </div>
+      
+      <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-2xl border border-paper-border bg-navy p-2 md:p-4 stamp-border">
+        {/* Decorative corners */}
+        <div className="absolute top-2 left-2 w-4 h-4 border-t border-l border-brass/30"></div>
+        <div className="absolute top-2 right-2 w-4 h-4 border-t border-r border-brass/30"></div>
+        <div className="absolute bottom-2 left-2 w-4 h-4 border-b border-l border-brass/30"></div>
+        <div className="absolute bottom-2 right-2 w-4 h-4 border-b border-r border-brass/30"></div>
+        
+        <div className="w-full h-full rounded-lg overflow-hidden relative bg-black">
+          <iframe 
+            className="absolute top-0 left-0 w-full h-full"
+            src="https://www.youtube.com/embed/6tarkE6oxOE?rel=0" 
+            title="Prior Product Demo" 
+            frameBorder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerPolicy="strict-origin-when-cross-origin" 
+            allowFullScreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+);
+
 const ProblemSection = () => (
   <section id="manifesto" className="w-full max-w-7xl mx-auto px-6 py-24 md:py-32">
     <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
@@ -656,6 +691,7 @@ export default function LandingPage() {
       <HowItWorks />
       <Features />
       <ProductPreview />
+      <VideoDemo />
       <Serendipity />
       <AnimatedMailbox />
       <CTA />
