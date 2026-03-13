@@ -19,10 +19,10 @@ const Nav = () => (
       <Link to="/blog" className="hover:text-navy transition-colors">Manifesto</Link>
     </div>
     <div className="flex items-center gap-4">
-      <a href="https://priormailid.vercel.app/" className="hidden md:block text-sm font-medium text-navy hover:text-navy-light transition-colors">
+      <a href="https://priormail.app/" className="hidden md:block text-sm font-medium text-navy hover:text-navy-light transition-colors">
         Sign In
       </a>
-      <a href="https://priormailid.vercel.app/" className="inline-block bg-navy text-parchment px-5 py-2.5 text-sm font-medium rounded-sm hover:bg-navy-light transition-colors shadow-sm">
+      <a href="https://priormail.app/" className="inline-block bg-navy text-parchment px-5 py-2.5 text-sm font-medium rounded-sm hover:bg-navy-light transition-colors shadow-sm">
         Access Now
       </a>
     </div>
